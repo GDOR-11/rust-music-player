@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "playlists-loader",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "build/index.js",
+    "scripts": {
+        "start": "rm -rf build && npx tsc && echo \"successfully finished build, now running...\" && node ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.5.4"
+    },
+    "dependencies": {
+        "@types/node": "^22.4.0",
+        "@types/progress": "^2.0.7",
+        "@types/prompts": "^2.4.9",
+        "axios": "^1.7.4",
+        "duration-fns": "^3.0.2",
+        "progress": "^2.0.3",
+        "prompts": "^2.4.2"
+    }
+}
