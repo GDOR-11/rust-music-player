@@ -24,7 +24,7 @@ let video_data = (await Promise.all(playlists.map(get_playlist_videos_data))).fl
 console.log(`writing music data to ${MUSIC_DATA_DIR}`);
 await fs.writeFile(MUSIC_DATA_DIR, "{\"musics\":" + JSON.stringify(video_data.map(data => {
     return { ...data, path: music_filepath(data.title) };
-})) + "}");
+})) + "}", { flag: "w" });
 
 const answer = await prompts({
     type: "confirm",
