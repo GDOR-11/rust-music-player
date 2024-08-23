@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as duration from "duration-fns";
 
-type VideoData = {
+export type VideoData = {
     id: string,
     title: string,
     channel: string,
